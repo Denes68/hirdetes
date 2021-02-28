@@ -1,0 +1,92 @@
+body, html {
+  height: 100%;
+  background-color: rgb(78, 77, 77);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("img/mozi.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 4px 4px 4px black;
+}
+/*eddig tart a elmosódott felirat*/
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  background-color: rgb(78, 77, 77);
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*eddig tart a 3 kép egymás mellett*/
+
+
+
+h3{
+  color: darkblue;
+  font-weight: bold;
+}
+
+.szoveg{
+  font-family: verdana;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+}
+
+
+.footer{
+  background-color: rgb(17, 16, 16);
+  color:white;
+  padding: 1%;
+}
+
+.jobbra{
+  float:right;
+}
+
+#tekercs{
+  background-image: url(img/tekercs.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 5%;
+
+}
